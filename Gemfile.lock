@@ -1,3 +1,11 @@
+GIT
+  remote: git@github.com:ignu/foundation-rails.git
+  revision: 8e854e7a509efc9fb2998e6f0af02529d2237042
+  specs:
+    foundation-rails (5.0.2.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -128,6 +136,7 @@ PLATFORMS
 DEPENDENCIES
   angularjs-rails
   coffee-rails (~> 4.0.0)
+  foundation-rails!
   jquery-rails
   ohanakapa
   pg
