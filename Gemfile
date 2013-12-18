@@ -5,7 +5,7 @@ gem 'rails', '4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-gem 'foundation-rails', git: "git@github.com:ignu/foundation-rails.git"
+gem 'foundation-rails', github: "ignu/foundation-rails"
 
 gem 'ohanakapa'
 gem 'angularjs-rails'
