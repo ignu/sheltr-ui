@@ -4,8 +4,6 @@ app.factory('Services', ['$resource', ($resource) ->
   $resource '/services.json', null, 'index': { method:'GET' }
 ])
 
-app.controller "ServicesCntl", ($scope, Services) ->
+app.controller "ServicesCntl", ['$scope', 'Services', (($scope, Services) ->
   services = Services.query()
-
-  $scope.services = services
-  window.services = services
+  $scope.services = services)]
