@@ -57,6 +57,7 @@ GEM
     multipart-post (1.2.0)
     ohanakapa (1.0.0)
       sawyer (~> 0.3.0)
+    pg (0.17.0)
     polyglot (0.3.3)
     pry (0.9.12.4)
       coderay (~> 1.0)
@@ -123,6 +124,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jquery-rails
   ohanakapa
+  pg
   pry
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)

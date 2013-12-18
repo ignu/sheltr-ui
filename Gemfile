@@ -6,7 +6,6 @@ gem 'rails', '4.0.0'
 gem 'ohanakapa'
 gem 'angularjs-rails'
 
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -21,6 +20,10 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
+group :production do
+  gem 'pg'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
