@@ -1,0 +1,17 @@
+<h1>Services</h1>
+
+<div ng-controller="ServicesCntl">
+  <div class="services" ng-repeat="service in services">
+    <div class="service">
+      <h3> {{service.name}} </h3>
+
+      <a href="{{ service.urls[0] }}">..</a>
+
+      <div class="details">
+        {{ service.hours }}
+      </div>
+
+    </div>
+  </div>
+</div>
+
