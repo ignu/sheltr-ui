@@ -1,18 +1,22 @@
 <div class="row">
-  <h1>Local Services</h1>
+  <h1>Sheltr</h1>
 </div>
 
 <div ng-controller="ServicesCntl">
+  <leaflet markers="markers" center="center" width="90%" height="220px"></leaflet>
   <div class="services" ng-repeat="service in services">
     <div class="service row" ng-show="{{ service.description.length > 0 }}">
       <div class="header row">
         <div class="name large-6 columns">
-          <h3> {{service.name}} </h3>
+          <div ng-show="{{ service.urls.length > 0 }}">
+            <a href="{{ service.urls[0] }}"><h3> {{service.name}} </h3></a>
+          </div>
+
+          <div ng-show="{{ !service.urls }}">
+            <h3> {{service.name}} </h3>
+          </div>
         </div>
 
-        <div class="website large-3 columns" ng-show="{{ service.urls.length > 0 }}">
-          <a href="{{ service.urls[0] }}">(website)</a>
-        </div>
 
       </div>
 
@@ -20,7 +24,7 @@
         <div class="large-11 columns">
           {{ service.description }}
 
-          <div class="hours">
+          <div class="hours" ng-show="{{ !!service.hours }}">
             <strong>Hours</strong>: {{ service.hours }}
           </div>
         </div>

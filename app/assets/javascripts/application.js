@@ -16,7 +16,8 @@
 //= require modernizr
 //= require angular
 //= require angular-resource
+//= require angular-leaflet
+//= require lodash
 //= require_tree .
-//
 
 $(function(){ $(document).foundation(); });
